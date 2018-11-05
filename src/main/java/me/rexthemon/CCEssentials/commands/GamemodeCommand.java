@@ -44,9 +44,40 @@ public class GamemodeCommand extends PlayerCommand {
 			return;
 		}
 
+		// Check if args are 1.
+
+		if (args.length == 1) {
+
+			if (args[0].equalsIgnoreCase("creative")
+					|| args[0].equalsIgnoreCase("1")
+					|| args[0].equalsIgnoreCase("c")) {
+				player.setGameMode(GameMode.CREATIVE);
+				Core.msg(player, "&aYour gamemode has been set to creative.");
+
+			} else if (args[0].equalsIgnoreCase("survival")
+					|| args[0].equalsIgnoreCase("0")
+					|| args[0].equalsIgnoreCase("s")) {
+				player.setGameMode(GameMode.SURVIVAL);
+				Core.msg(player, "&aYour gamemode has been set to survival.");
+
+			} else if (args[0].equalsIgnoreCase("adventure")
+					|| args[0].equalsIgnoreCase("2")
+					|| args[0].equalsIgnoreCase("a")) {
+				player.setGameMode(GameMode.ADVENTURE);
+				Core.msg(player, "&aYour gamemode has been set to adventure.");
+
+			} else if (args[0].equalsIgnoreCase("spectator")
+					|| args[0].equalsIgnoreCase("3")
+					|| args[0].equalsIgnoreCase("sp")) {
+				player.setGameMode(GameMode.SPECTATOR);
+				Core.msg(player, "&aYour gamemode has been set to spectator.");
+
+			}
+		}
+
 		// Check if args are 2.
 
-		if (args.length == 2) {
+		else if (args.length == 2) {
 			final Player target = Bukkit.getServer().getPlayer(args[1]);
 
 			// If target is null, send error msg & return.
