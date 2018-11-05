@@ -48,6 +48,8 @@ public class GamemodeCommand extends PlayerCommand {
 
 		if (args.length == 1) {
 
+			// Go through all the gamemodes.
+
 			if (args[0].equalsIgnoreCase("creative")
 					|| args[0].equalsIgnoreCase("1")
 					|| args[0].equalsIgnoreCase("c")) {
