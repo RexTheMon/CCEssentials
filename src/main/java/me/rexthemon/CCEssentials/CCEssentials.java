@@ -10,6 +10,7 @@ import me.rexthemon.CCEssentials.commands.GamemodeCommand;
 import me.rexthemon.CCEssentials.commands.TPAcceptCommand;
 import me.rexthemon.CCEssentials.commands.TPRequestCommand;
 import me.rexthemon.CCEssentials.commands.TeleportCommand;
+import me.rexthemon.CCEssentials.commands.WeatherCommand;
 import me.rexthemon.CCEssentials.listeners.PlayerJoinListener;
 import me.rexthemon.lib.Core;
 
@@ -27,7 +28,8 @@ public class CCEssentials extends JavaPlugin {
 				new GamemodeCommand(),
 				new TeleportCommand(),
 				new TPAcceptCommand(),
-				new TPRequestCommand());
+				new TPRequestCommand(),
+				new WeatherCommand());
 
 		registerEvents(
 				new PlayerJoinListener());
