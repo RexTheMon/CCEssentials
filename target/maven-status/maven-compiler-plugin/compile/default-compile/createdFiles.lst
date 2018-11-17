@@ -1,8 +1,10 @@
 me\rexthemon\CCEssentials\CCEssentials.class
 me\rexthemon\CCEssentials\commands\GamemodeCommand.class
+me\rexthemon\CCEssentials\PlayerCache.class
 me\rexthemon\CCEssentials\commands\PlayerCommand.class
 me\rexthemon\CCEssentials\commands\TPAcceptCommand.class
 me\rexthemon\CCEssentials\commands\TPRequestCommand.class
 me\rexthemon\CCEssentials\commands\WeatherCommand.class
 me\rexthemon\CCEssentials\commands\TeleportCommand.class
+me\rexthemon\CCEssentials\commands\PlayerCommand$ReturnedCommandException.class
 me\rexthemon\CCEssentials\listeners\PlayerJoinListener.class
